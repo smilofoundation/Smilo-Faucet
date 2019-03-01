@@ -3,7 +3,7 @@ const web3 = require('@services/web3');
 const transaction = require('@services/transaction');
 
 const wallet = web3.eth.accounts.privateKeyToAccount(
-  `0x${config.ETH_PRIVATE_KEY}`
+  `0x${config.SMILO_PRIVATE_KEY}`
 );
 
 web3.eth.defaultAccount = wallet.address;
@@ -17,7 +17,7 @@ module.exports = {
       from: wallet.address,
       to,
       value,
-      key: config.ETH_PRIVATE_KEY
+      key: config.SMILO_PRIVATE_KEY
     });
     return transaction.send(signedTransaction);
   },

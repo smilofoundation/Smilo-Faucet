@@ -19,6 +19,6 @@ const getProviderFromUrl = url => {
   }
 }
 
-const providerType = getProviderFromUrl(config.ETH_NODE_URL)
+const providerType = getProviderFromUrl(config.SMILO_NODE_URL)
 
-module.exports = new providerType(config.ETH_NODE_URL)
+module.exports = new providerType(config.SMILO_NODE_URL)

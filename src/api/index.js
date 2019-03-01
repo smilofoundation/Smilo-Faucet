@@ -8,9 +8,9 @@ const tokenName = config.ERC20_NAME.toLowerCase()
 module.exports = () => {
   let api = Router()
 
-  if (config.FAUCET_DRIPS_ETH) {
-    api.use('/request/eth/:address', FaucetEthApi.request)
-    api.use('/status/eth', FaucetEthApi.getStatus)
+  if (config.FAUCET_DRIPS_SMILO) {
+    api.use('/request/smilo/:address', FaucetEthApi.request)
+    api.use('/status/smilo', FaucetEthApi.getStatus)
   }
 
   if (config.FAUCET_DRIPS_ERC20) {

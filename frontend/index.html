@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="https://testnet-faucet.smilo.network/manifest.json">
+    <link rel="shortcut icon" href="https://testnet-faucet.smilo.network/favicon.ico">
+    <title>Smilo Testnet Faucet</title>
+    <link href="./files/main.css" rel="stylesheet">
+</head>
+
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root">
+    <div>
+        <section class="hero is-primary">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">Smilo Testnet Faucet</h1></div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="">
+                <section class="section">
+                    <div class="container bottompadding">
+                            <div class="field">
+                                <label class="label">Enter your testnet account address</label>
+                                <div class="control">
+                                    <input class="input is-primary" type="text" placeholder="Enter your testnet account address" id="toaddress" value="">
+                                </div>
+                            </div>
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <button class="button is-link" onclick="sendSmilo()">Send me Smilo</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="container" id="result">
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="files/main.js"></script>
+</body>
+
+</html>

@@ -9,37 +9,37 @@ module.exports = {
 
     if (!address || !validateEthAddress(address)) {
       return res
-        .json({ error: 'Invalid Ethereum address', input: address })
+        .json({ error: 'Invalid Smilo address', input: address })
         .status(400);
     }
 
     const addressBalance = await wallet.getBalanceOfAddress(address);
 
-    if (Number(addressBalance) >= config.ETH_PAYOUT) {
+    if (Number(addressBalance) >= config.SMILO_PAYOUT) {
       return res
         .json({
-          error: 'You already have enough ETH!',
+          error: 'You already have enough Smilo!',
           balance: addressBalance,
           input: address
         })
         .status(400);
     }
 
-    logger(`REQUESTED: ${config.ETH_PAYOUT} ETH from ${address}`);
+    logger(`REQUESTED: ${config.SMILO_PAYOUT} Smilo from ${address}`);
 
     try {
       let { transactionHash } = await wallet.sendEther({
         to: address,
-        amount: config.ETH_PAYOUT
+        amount: config.SMILO_PAYOUT
       });
 
       let remainingBalance = await wallet.getBalance();
 
-      logger(`SENT: ${config.ETH_PAYOUT} ETH to ${address}`);
-      logger(`REMAINING: ${remainingBalance} ETH left in faucet`);
+      logger(`SENT: ${config.SMILO_PAYOUT} Smilo to ${address}`);
+      logger(`REMAINING: ${remainingBalance} Smilo left in faucet`);
       return res.json({
         transactionHash,
-        amount: config.ETH_PAYOUT,
+        amount: config.SMILO_PAYOUT,
         remainingBalance
       });
     } catch (ex) {
@@ -50,6 +50,6 @@ module.exports = {
 
   async getStatus(req, res) {
     let balance = await wallet.getBalance();
-    return res.json({ balance, address: wallet.getAddress(), currency: 'ETH' });
+    return res.json({ balance, address: wallet.getAddress(), currency: 'SMILO' });
   }
 };

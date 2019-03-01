@@ -9,7 +9,7 @@ module.exports = {
 
     if (!address || !validateEthAddress(address)) {
       return res
-        .json({ error: 'Invalid Ethereum address', input: address })
+        .json({ error: 'Invalid Smilo address', input: address })
         .status(400);
     }
 
