@@ -1,0 +1,245 @@
+a {
+    text-decoration: none !important;
+}
+.navbar-default {
+    margin: 0% !important;
+}
+
+.center {
+    text-align: center;
+}
+
+.containerSmiloCalculator {
+    background-color: #eff1f7;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.blockBanner {
+    background-color: #eff1f7;
+    width: 100%;
+    text-align: center;
+    font-size: 130%;
+    padding: 0.3%;
+    margin: 0%;
+}
+
+.blockBanner ul {
+    margin: 0%;
+}
+
+.blockBanner ul li {
+    display: inline-block;
+    margin: 0% 3%;
+}
+
+.smiloPayCalcInput {
+    display:inline-block !important;
+    margin-bottom:3%;
+}
+
+.smilopayCalculator {
+    position: relative;
+    overflow: auto;
+}
+
+.smilopayCalculator table{
+    margin: 0% auto;
+    font-size: 130%;
+    margin-bottom: 3%;
+    width:60%;
+}
+
+.smilopayCalculator table tr td{
+    padding:1%;
+}
+
+.smilopayCalculator table tbody tr th, .smilopayCalculator table tbody tr td {
+    text-align: center;
+    width:25%;
+}
+
+#amountSmilo {
+    width: 15%;
+}
+
+.informationContent article{
+    width: 50%;
+    margin: 3% auto;
+}
+
+
+/* Transaction calculator */
+.smiloCalcInput {
+    display:inline-block !important;
+    margin-bottom:3%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+
+.smiloCalculator {
+    position: relative;
+    overflow: auto;
+}
+
+.smiloCalculator table{
+    margin: 0% auto;
+    font-size: 130%;
+    margin-bottom: 3%;
+    width:60%;
+}
+
+.smiloCalculator table tr td{
+    padding:1%;
+}
+
+.smiloCalculator table tbody tr th, .smiloCalculator table tbody tr td {
+    text-align: center;
+    width:25%;
+}
+
+#amountTx {
+    width: 15%;
+}
+
+#amountGas {
+    width: 15%;
+}
+
+
+/* Footer */
+footer {
+    text-align:center;
+}
+
+/* Social icons */
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+#social {
+    margin: 20px 10px;
+    text-align: center;
+}
+
+.smGlobalBtn{ /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 2px 2px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 25px;
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+}
+
+/* Bootstrap buttons */
+.td-border {
+    width: 250px;
+}
+.btn-primary {
+    min-width: 150px;
+}
+
+.btn-warning, .btn-success {
+    min-width: 100px;
+}
+
+/* facebook button class*/
+.telegramBtn{
+    background: #32AFED;
+}
+
+.telegramBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f2c6"; /* add facebook icon */
+}
+
+.telegramBtn:hover{
+    color: #4060A5;
+    background: #fff;
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: #4060A5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+}
+
+/* twitter button class*/
+.twitterBtn{
+    background: #00ABE3;
+}
+
+.twitterBtn:before{
+    font-family: "FontAwesome";
+    content: "\f099"; /* add twitter icon */
+}
+
+.twitterBtn:hover{
+    color: #00ABE3;
+    background: #fff;
+}
+
+/* linkedin button class*/
+.linkedinBtn{
+    background: #0094BC;
+}
+
+.linkedinBtn:before{
+    font-family: "FontAwesome";
+    content: "\f0e1"; /* add linkedin icon */
+}
+
+.linkedinBtn:hover{
+    color: #0094BC;
+    background: #fff;
+}
+
+/* medium button class*/
+.mediumBtn{
+    background: #000000;
+}
+
+.mediumBtn:before{
+    font-family: "FontAwesome";
+    content: "\f23a"; /* add medium icon */
+}
+
+.mediumBtn:hover{
+    color: #c6c6c6;
+    background: #3a3a3a;
+}
+
+/* Reddit button class*/
+.redditBtn{
+    background: #DD4B39;
+}
+
+.redditBtn:before{
+    font-family: "FontAwesome";
+    content: "\f1a1"; /* add medium icon */
+}
+
+.redditBtn:hover{
+    color: #DD4B39;
+    background: #ffffff;
+}

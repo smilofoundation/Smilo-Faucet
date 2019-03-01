@@ -441,7 +441,6 @@ textarea {
 code,
 pre {
     -moz-osx-font-smoothing: auto;
-    -webkit-font-smoothing: auto;
     font-family: monospace
 }
 
@@ -5819,7 +5818,6 @@ a.tag:hover {
 }
 
 .card-header {
-    background-color: none;
     -ms-flex-align: stretch;
     align-items: stretch;
     -webkit-box-shadow: 0 1px 2px hsla(0, 0%, 4%, .1);
@@ -5863,12 +5861,10 @@ a.tag:hover {
 }
 
 .card-content {
-    background-color: none;
     padding: 1.5rem
 }
 
 .card-footer {
-    background-color: none;
     border-top: 1px solid #dbdbdb;
     -ms-flex-align: stretch;
     align-items: stretch
@@ -6073,7 +6069,7 @@ screen and (min-width:769px) {
 
 @media print,
 screen and (min-width:769px) {
-    .level-left .level-item:not(: last-child), .level-right .level-item:not(: last-child) {
+    .level-left .level-item:not(:last-child), .level-right .level-item:not(:last-child) {
         margin-right: .75rem
     }
 }
@@ -7428,8 +7424,6 @@ a.navbar-item:hover {
     .navbar-start {
         -ms-flex-align: stretch;
         align-items: stretch;
-        display: -ms-flexbox;
-        display: flex
     }
     .navbar {
         min-height: 3.25rem
@@ -7471,10 +7465,6 @@ a.navbar-item:hover {
         align-items: center
     }
     .navbar-item,
-    .navbar-link {
-        display: -ms-flexbox;
-        display: flex
-    }
     .navbar-item.has-dropdown {
         -ms-flex-align: stretch;
         align-items: stretch
@@ -9605,8 +9595,6 @@ screen and (min-width:769px) {
     flex-grow: 1;
     -ms-flex-negative: 1;
     flex-shrink: 1;
-    min-height: -webkit-min-content;
-    min-height: -moz-min-content;
     min-height: min-content
 }
 
