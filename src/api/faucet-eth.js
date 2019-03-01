@@ -50,6 +50,6 @@ module.exports = {
 
   async getStatus(req, res) {
     let balance = await wallet.getBalance();
-    return res.json({ balance, address: wallet.getAddress(), currency: 'SMILO' });
+    return res.json({ balance, address: wallet.getAddress(), currency: 'XSM' });
   }
 };

@@ -28,7 +28,7 @@ function syntaxHighlight(json) {
 
 function sendSmilo() {
     to = document.getElementById('toaddress').value;
-    if (to.length !== 40) {
+    if (to.length !== 42) {
         alert("Not a valid address: " + to);
     } else {
         request.open('GET', 'http://localhost:3000/request/smilo/'+to, true);
