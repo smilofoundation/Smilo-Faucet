@@ -5,8 +5,8 @@ const TRANSACTION_GAS_PRICE = web3.utils.toWei('4', 'gwei')
 
 module.exports = {
   async sign({ from, to, value, key }) {
-    let gas = new web3.utils.BN(TRANSACTION_GAS)
-    let gasPrice = new web3.utils.BN(TRANSACTION_GAS_PRICE)
+    let gas = new web3.utils.toBN(TRANSACTION_GAS)
+    let gasPrice = new web3.utils.toBN(TRANSACTION_GAS_PRICE)
     let chainId = await web3.eth.net.getId()
 
     const tx = {
