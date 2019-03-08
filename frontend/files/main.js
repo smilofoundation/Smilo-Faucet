@@ -31,7 +31,7 @@ function sendSmilo() {
     if (to.length !== 42) {
         alert("Not a valid address: " + to);
     } else {
-        request.open('GET', 'http://localhost:3000/request/smilo/'+to, true);
+        request.open('GET', URI+'/request/smilo/'+to, true);
         request.onload = function () {
 
             // Begin accessing JSON data here
@@ -53,7 +53,7 @@ function sendSmilo() {
 
 var request = new XMLHttpRequest();
 
-request.open('GET', 'http://localhost:3000/status/smilo', true);
+request.open('GET', URI+'/status/smilo' , true);
 request.onload = function () {
 
     // Begin accessing JSON data here
