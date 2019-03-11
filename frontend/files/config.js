@@ -1,1 +1,1 @@
-var URI = 'http://localhost:3000/';
+var URI = 'http://localhost:3000';

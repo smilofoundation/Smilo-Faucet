@@ -31,15 +31,23 @@ function sendSmilo() {
     if (to.length !== 42) {
         alert("Not a valid address: " + to);
     } else {
-        request.open('GET', URI+'/request/smilo/'+to, true);
+        document.getElementById("result").style.display = "none";
+        document.getElementById("loading-container").style.display = "block";
+        document.getElementById("send-smilo-button").disabled = true;
+        document.getElementById("toaddress").disabled = true;
+
+        request.open('GET', URI + '/request/smilo/' + to, true);
         request.onload = function () {
 
             // Begin accessing JSON data here
             var data = JSON.parse(this.response);
 
             if (request.status >= 200 && request.status < 400) {
-                console.log(data);
                 var str = JSON.stringify(data, undefined, 4);
+                document.getElementById("result").style.display = "block";
+                document.getElementById("loading-container").style.display = "none";
+                document.getElementById("send-smilo-button").disabled = false;
+                document.getElementById("toaddress").disabled = false;
                 output(syntaxHighlight(str));
             } else {
                 console.log('error');
