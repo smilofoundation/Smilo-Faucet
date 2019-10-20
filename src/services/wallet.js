@@ -2,6 +2,10 @@ const config = require('@/config');
 const web3 = require('@services/web3');
 const transaction = require('@services/transaction');
 
+if (!config.SMILO_PRIVATE_KEY) {
+  throw Error("SMILO_PRIVATE_KEY env var is required but not defined!")
+}
+
 const wallet = web3.eth.accounts.privateKeyToAccount(
   `0x${config.SMILO_PRIVATE_KEY}`
 );
