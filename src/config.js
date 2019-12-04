@@ -4,6 +4,7 @@ const env = (name, fallback = '') => process.env[name] || fallback
 
 module.exports = {
   PORT: env('PORT', 3000),
+  HOST: env('HOST', '127.0.0.1'),
   DEBUG_MESSAGES: JSON.parse(env('DEBUG_MESSAGES', 'false')),
 
   SMILO_NODE_URL: env('SMILO_NODE_URL', 'https://testnet-wallet.smilo.network/api'),

@@ -32,6 +32,6 @@ app.use(function (req, res) {
 })
 
 
-app.server.listen(config.PORT, () => {
-  console.log(`Started on port ${app.server.address().port}`)
+app.server.listen(config.PORT, config.HOST, () => {
+  console.log(`Started on port ${JSON.stringify(app.server.address())}`)
 })
